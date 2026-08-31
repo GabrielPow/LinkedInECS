@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DOM Saver & Snippets",
+  "version": "1.1.2",
+  "description": "Save the current page's HTML (auto-expanding \"show more\" content first), and expand text snippets (with rotating variants) as you type.",
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

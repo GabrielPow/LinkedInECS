@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 480px; color: #222; }
+    h2 { margin-bottom: 4px; }
+    .subtitle { color: #666; font-size: 13px; margin-bottom: 20px; line-height: 1.4; }
+    .snippet-card { border: 1px solid #ddd; border-radius: 6px; padding: 12px; margin-bottom: 12px; }
+    .snippet-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .trigger-label { font-weight: bold; font-family: monospace; }
+    .variant-row { display: flex; gap: 6px; margin-bottom: 6px; }
+    .variant-row input { flex: 1; padding: 4px; }
+    .mode-toggle { font-size: 12px; margin-top: 6px; }
+    button { cursor: pointer; }
+    .danger { color: #c0392b; background: none; border: none; }
+    .add-variant { font-size: 12px; padding: 4px 8px; }
+    #newSnippet { display: flex; gap: 8px; margin-top: 16px; }
+    #newSnippet input { flex: 1; padding: 6px; }
+    .empty { color: #888; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h2>Snippets</h2>
+  <div class="subtitle">
+    Digite um trigger e o texto e expandido. Se tem mais de um snippet, 
+    passa por ordem linear ou aleatorio    
+  </div>
+
+  <div id="snippetContainer"></div>
+
+  <div id="newSnippet">
+    <input id="newTrigger" placeholder="New trigger, e.g. /em">
+    <button id="addSnippetBtn">Adiciona Snippet</button>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
