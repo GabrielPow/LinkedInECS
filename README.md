@@ -143,11 +143,11 @@ Exemplo:
 
 ```text
 Downloads/
-├── Juliane Oliveira _ LinkedIn (1).html
-├── Maria Beatriz Ribeiro Morales _ LinkedIn.html
+├── Mario Mario _ LinkedIn.html
+├── Luigi Mario _ LinkedIn.html
 └── extracted_text/
-    ├── Juliane Oliveira _ LinkedIn (1).txt
-    └── Maria Beatriz Ribeiro Morales _ LinkedIn.txt
+    ├── Mario Mario _ LinkedIn (1).txt
+    └── Luigi Mario _ LinkedIn.txt
 ```
 
 ---
