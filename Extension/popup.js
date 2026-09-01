@@ -40,7 +40,7 @@ const originalSaveLabel = saveBtn.textContent;
 
 saveBtn.addEventListener('click', async () => {
   saveBtn.disabled = true;
-  saveBtn.textContent = 'Expanding & saving…';
+  saveBtn.textContent = 'Salvando';
 
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -74,7 +74,7 @@ async function renderSnippets() {
 
   if (triggers.length === 0) {
     container.className = 'empty';
-    container.textContent = 'No snippets yet.';
+    container.textContent = 'Nenhum Snippet Ainda.';
     return;
   }
 
